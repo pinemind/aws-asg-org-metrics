@@ -92,7 +92,7 @@ Note: Replace 'NAME_OF_YOUR_S3_BUCKET' with your S3 bucket name that csv's will 
 
 * Trust Policy/Relationship
 
-Note: Replace the master AWS Organization AccountId where the Lambda is deployed in the Principal value
+Note: Replace the 'MASTER_ORG_ACCOUNTID_WITH_LAMBDA' with the master AWS Organization AccountId where the Lambda is deployed in the Principal:AWS value
 
 ```
 {
@@ -101,7 +101,7 @@ Note: Replace the master AWS Organization AccountId where the Lambda is deployed
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::MASTER_ORG_ACCOUNT_WITH_LAMBDA:root"
+        "AWS": "arn:aws:iam::MASTER_ORG_ACCOUNTID_WITH_LAMBDA:root"
       },
       "Action": "sts:AssumeRole",
       "Condition": {}
