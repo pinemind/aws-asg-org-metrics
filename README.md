@@ -124,3 +124,9 @@ Note: Replace the 'MASTER_ORG_ACCOUNTID_WITH_LAMBDA' with the master AWS Organiz
     ]
 }
 ```
+
+## ToDo
+
+* CloudFormation template
+* Add hourly CloudWatch Scheduled Event
+* Error handling for missing roles in accounts - log accountIds and skip
